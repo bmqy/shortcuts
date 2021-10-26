@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>原创快捷指令集合</title>
+    <meta name="keywords" content="快捷指令,shortcuts,捷径,workflow">
+    <meta name="description" content="bmqy原创的快捷指令集合">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="icon" href="https://bmqy.github.io/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .el-header{
+            padding-top: 60px;
+            background-color: #f2f2f2;
+        }
+        .logo{
+            width: 200px;
+            height: 200px;
+        }
+        .h1{
+            font-family: SF Pro SC,SF Pro Text,SF Pro Icons,PingFang SC,Helvetica Neue,Helvetica,Arial,sans-serif;
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 1.14615;
+            letter-spacing: .006em;
+            text-align: left;
+        }
+        .h3{
+            font-size: 1.3em;
+            line-height: 1.4545;
+            font-weight: 300;
+            letter-spacing: .016em;
+        }
+        .el-row .el-row{
+            margin-top: 30px;
+            padding: 30px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .thumb{
+            width: 326px;
+            padding: 0 15px;
+            border-bottom: 1px solid #ccc;
+        }
+        .thumb .inner{
+            width: 326px;
+            height: 326px;
+            overflow: hidden;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .text{
+            font-size: 16px;
+            color: #333;
+            line-height: 1.5;
+        }
+        .footer{
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <el-row>
+        <el-col :span="12" :offset="6">
+                
+        <el-container>
+            <el-header height="350px">
+                <el-row type="flex" justify="center" align="middle">
+                    <el-col :span="18" :offset="0">
+                        <div class="h1">倒班闹钟使用手册</div>
+                        <div class="h3">适用于：v2.1.0+</div>
+                    </el-col>
+                    <el-col :span="6" :offset="0">
+                        <div class="logo">
+                            <img src="https://help.apple.com/assets/6008E0798215C647F71CD25A/6008E0808215C647F71CD268/zh_CN/d230a25cb974f8908871af04caad89a1.png" width="200" height="200" alt="" srcset="">
+                        </div>
+                    </el-col>
+                </el-row>
+            </el-header>
+            <el-main>     
+                <el-row :gutter="20">
+                    <el-col :span="10" :offset="0">
+                        <div class="thumb"><div class="inner" style="background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645506.jpg);"></div></div>
+                    </el-col>
+                    <el-col :span="14" :offset="0" class="text">
+                        什么是快捷指令？
+快捷指令是一种可让您使用 App 完成一个或多个任务的快捷方式。“快捷指令” App 可让您创建包含多个步骤的快捷指令。例如，您可以构建一个“冲浪时间”快捷指令来获取冲浪报道、提供预计到达海滩的时间以及播放冲浪音乐播放列表。
+                    </el-col>
+                </el-row>
+                <el-row :gutter="20">
+                    <el-col :span="14" :offset="0" class="text">
+                        什么是快捷指令？
+快捷指令是一种可让您使用 App 完成一个或多个任务的快捷方式。“快捷指令” App 可让您创建包含多个步骤的快捷指令。例如，您可以构建一个“冲浪时间”快捷指令来获取冲浪报道、提供预计到达海滩的时间以及播放冲浪音乐播放列表。
+                    </el-col>
+                    <el-col :span="10" :offset="0">
+                        <div class="thumb"><div class="inner" style="background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645505.jpg);"></div></div>
+                    </el-col>
+                </el-row>
+                <el-row :gutter="20">
+                    <el-col :span="10" :offset="0">
+                        <div class="thumb"><div class="inner" style="background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645503.jpg);"></div></div>
+                    </el-col>
+                    <el-col :span="14" :offset="0" class="text">
+                        什么是快捷指令？ 快捷指令是一种可让您使用 App 完成一个或多个任务的快捷方式。“快捷指令” App 可让您创建包含多个步骤的快捷指令。例如，您可以构建一个“冲浪时间”快捷指令来获取冲浪报道、提供预计到达海滩的时间以及播放冲浪音乐播放列表。
+                    </el-col>
+                </el-row>
+                <el-row :gutter="20">
+                    <el-col :span="14" :offset="0" class="text">
+                        什么是快捷指令？ 快捷指令是一种可让您使用 App 完成一个或多个任务的快捷方式。“快捷指令” App 可让您创建包含多个步骤的快捷指令。例如，您可以构建一个“冲浪时间”快捷指令来获取冲浪报道、提供预计到达海滩的时间以及播放冲浪音乐播放列表。
+                    </el-col>
+                    <el-col :span="10" :offset="0">
+                        <div class="thumb"><div class="inner" style="background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645502.jpg);"></div></div>
+                    </el-col>
+                </el-row>
+                <el-row :gutter="20">
+                    <el-col :span="10" :offset="0">
+                        <div class="thumb"><div class="inner" style="background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645501.jpg);"></div></div>
+                    </el-col>
+                    <el-col :span="14" :offset="0" class="text">
+                        什么是快捷指令？ 快捷指令是一种可让您使用 App 完成一个或多个任务的快捷方式。“快捷指令” App 可让您创建包含多个步骤的快捷指令。例如，您可以构建一个“冲浪时间”快捷指令来获取冲浪报道、提供预计到达海滩的时间以及播放冲浪音乐播放列表。
+                    </el-col>
+                </el-row>
+                <el-row :gutter="20">
+                    <el-col :span="14" :offset="0" class="text">
+                        什么是快捷指令？ 快捷指令是一种可让您使用 App 完成一个或多个任务的快捷方式。“快捷指令” App 可让您创建包含多个步骤的快捷指令。例如，您可以构建一个“冲浪时间”快捷指令来获取冲浪报道、提供预计到达海滩的时间以及播放冲浪音乐播放列表。
+                    </el-col>
+                    <el-col :span="10" :offset="0">
+                        <div class="thumb"><div class="inner" style="background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20211026164550.jpg);"></div></div>
+                    </el-col>
+                </el-row>
+                <el-row :gutter="20">
+                    <el-col :span="10" :offset="0">
+                        <div class="thumb"><div class="inner" style="background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645507.jpg);"></div></div>
+                    </el-col>
+                    <el-col :span="14" :offset="0" class="text">
+                        什么是快捷指令？ 快捷指令是一种可让您使用 App 完成一个或多个任务的快捷方式。“快捷指令” App 可让您创建包含多个步骤的快捷指令。例如，您可以构建一个“冲浪时间”快捷指令来获取冲浪报道、提供预计到达海滩的时间以及播放冲浪音乐播放列表。
+                    </el-col>
+                </el-row>
+                <el-row :gutter="20">
+                    <el-col :span="14" :offset="0" class="text">
+                        什么是快捷指令？ 快捷指令是一种可让您使用 App 完成一个或多个任务的快捷方式。“快捷指令” App 可让您创建包含多个步骤的快捷指令。例如，您可以构建一个“冲浪时间”快捷指令来获取冲浪报道、提供预计到达海滩的时间以及播放冲浪音乐播放列表。
+                    </el-col>
+                    <el-col :span="10" :offset="0">
+                        <div class="thumb"><div class="inner" style="background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645504.jpg);"></div></div>
+                    </el-col>
+                </el-row>
+            </el-main>
+            
+            <el-footer>
+                <div class="footer">@2016</div>
+            </el-footer>
+        </el-container>
+        </el-col>
+    </el-row>
+    
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: function() {
+        return { visible: false }
+        }
+    })
+    </script>
+</body>
+</body>
+</html>
