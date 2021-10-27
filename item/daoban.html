@@ -1,23 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>倒班闹钟食用手册</title>
-    <meta name="keywords" content="倒班闹钟,快捷指令,shortcuts,捷径,workflow">
-    <meta name="description" content="倒班闹钟快捷指令的食用手册">
-    <link href="https://cdn.bootcdn.net/ajax/libs/tailwindcss/2.2.7/tailwind.min.css" rel="stylesheet">
+    <meta name="keywords" content="倒班闹钟,快捷指令,shortcuts,捷径,workflow" />
+    <meta name="description" content="倒班闹钟快捷指令的食用手册" />
+    <link rel="stylesheet" href="https://bmqy.github.io/css/bootstrap.min.css" />
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
     <style>
-        .width-min{
-            width: 817px;
+        .font-bold{
+            font-weight: bold;
         }
-        .thumb{
+        .text-red{
+            color: rgba(255, 0, 0, 0.7);
+        }
+        .font-24{
+            font-size: 24px;
+        }
+        .border-b{
+            border-bottom: 1px solid #f5f5f5;
+        }
+        .m-15{
+            margin: 15px;
+        }
+        .mt-30{
+            margin-top: 30px;
+        }
+        .mx-15{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .my-15{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .my-30{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .py-30{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .thumb {
             width: 356px;
             padding: 0 15px;
             border-bottom: 1px solid #ccc;
         }
-        .thumb .inner{
+        .thumb .inner {
             width: 326px;
             height: 326px;
             overflow: hidden;
@@ -28,107 +63,203 @@
     </style>
 </head>
 <body>
-<div class="w-full bg-gray-100 py-10 mb-10">        
-    <div class="container width-min mx-auto">
-        <div class="flex justify-between items-start"> 
-            <div>                       
-                <div class="font-sans text-4xl font-medium py-2">倒班闹钟食用手册</div>
-                <div class="text-xl text-gray-400">适用于：v2.1.0+</div>
-            </div>   
-            <div class="">
-                <img src="//image.bmqy.net/upload/IMG_2856.PNG" width="200" height="200" alt="" srcset="">
+    <div class="container-fluid bg-info py-30">
+        <div class="container">        
+            <div class="row">
+                <div class="col-md-8">                
+                    <div class="">
+                        <h1>倒班闹钟食用手册</h1>
+                    </div>
+                    <div class="text-muted font-24">
+                        适用于：v2.1.0+</div>
+                </div>
+                <div class="col-md-4">                
+                    <img
+                    src="//image.bmqy.net/upload/IMG_2856.PNG"
+                    width="200"
+                    height="200"
+                    alt=""
+                    srcset=""
+                />
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container mx-auto width-min">
-    <div class="grid grid-cols-9 gap-4">
-        <div class="col-span-4">
-            <div class="thumb"><div class="inner" style="background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20211026164550.jpg);"></div></div>
-        </div>
-        <div class="col-span-5">
-            <h3 class="font-bold">设置每班次轮换周期</h3>
-            <p>根据倒班情况，选择倒班轮换的周期：</p>
-            <p>可选项：一天一倒班；一周一倒班；一月一倒班；多天一倒班；</p>
-            <p>一天一倒班比较简单，不举例说明了。</p> 
-            <p>举栗子说：比如一共2个班次：白班-夜班。</p>
-            <p>一周一倒班：就是说一礼拜轮换一个班次。比如这周的工作日都是白班，那么下周的工作日都是夜班，再下周的工作日又都是白班。</p>
-            <p>一月一倒班跟一周一倒班一样，只是周期是一月一换。</p>
-            <p>多天一倒班：就是每隔多少天轮换一个班次。</p>
-            <p><b class="text-red-500">* 新版可能需要删除旧版设置，请允许删除文件。</b></p>
-            <p><b class="text-red-500">* 以下所有设置，请按实际情况谨慎设置。</b></p>
-        </div>
-        <div class="col-span-9 my-10 my-10 border-b border-solid"></div>
-        <div class="col-span-5"> 
-            <h3 class="font-bold">设置当前班次</h3>
-            <p>选择好班次轮换周期后，就要设置当日的班次了。</p>
-            <p>要慎重选择，当日上的是什么班。不然闹钟都不正确了。</p>
-        </div>
-        <div class="col-span-4"> 
-            <div class="thumb"><div class="inner" style="background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645501.jpg);"></div></div>  
-        </div>
-        <div class="col-span-9 my-10 border-b border-solid"></div>
-        <div class="col-span-4"> 
-            <div class="thumb"><div class="inner" style="background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645502.jpg);"></div></div>
-        </div>
-        <div class="col-span-5"> 
-            <h3 class="font-bold">确认班次设置</h3>
-            <p>确认一天一倒班的当前班次设置。</p>
-            <p>如需修改，点击重新设置。</p>      
-        </div>
-        <div class="col-span-9 my-10 border-b border-solid"></div>
-        <div class="col-span-5"> 
-            <h3 class="font-bold">确认班次设置</h3>
-            <p>确认一周一倒班的当前班次设置。</p>
-            <p>如需修改，点击重新设置。</p>
-        </div>
-        <div class="col-span-4"> 
-            <div class="thumb"><div class="inner" style="background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645506.jpg);"></div></div>    
-        </div>
-        <div class="col-span-9 my-10 border-b border-solid"></div>
-        <div class="col-span-4">                 
-            <div class="thumb"><div class="inner" style="background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645507.jpg);"></div></div>  
-        </div>
-        <div class="col-span-5"> 
-            <h3 class="font-bold">确认班次设置</h3>
-            <p>确认一月一倒班的当前班次设置。</p>
-            <p>如需修改，点击重新设置。</p>
-        </div>
-        <div class="col-span-9 my-10 border-b border-solid"></div>
-        <div class="col-span-5">  
-            <h3 class="font-bold">设置轮换周期天数</h3>
-            <p>如果选择了多天一倒班，就需要设置一个周期天数。</p>
-            <p>具体已实际天数为准。默认为10。</p>   
-        </div>
-        <div class="col-span-4"> 
-            <div class="thumb"><div class="inner" style="background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645503.jpg);"></div></div>   
-        </div>
-        <div class="col-span-9 my-10 border-b border-solid"></div>
-        <div class="col-span-4"> 
-            <div class="thumb"><div class="inner" style="background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645504.jpg);"></div></div> 
-        </div>
-        <div class="col-span-5">
-            <h3 class="font-bold">设置当前班次第几天</h3>
-            <p>确认多天一倒班的当前班次设置。</p>
-            <p>具体已实际天数为准。默认为1。</p>   
-        </div>
-        <div class="col-span-9 my-10 border-b border-solid"></div>
-        <div class="col-span-5">      
-            <h3 class="font-bold">确认班次设置</h3>
-            <p>确认多天一倒班的当前班次设置。</p>
-            <p>如果是多天一调班的，会多出当前班次是第几天的提示</p>  
-        </div>
-        <div class="col-span-4">
-            <div class="thumb"><div class="inner" style="background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645505.jpg);"></div></div>  
+    <div class="container mt-30">
+        <div class="row">
+            <div class="col-md-10 col-sm-12">                
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="thumb">
+                            <div
+                                class="inner"
+                                style="
+                                    background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20211026164550.jpg);
+                                "
+                            ></div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="font-bold">设置每班次轮换周期</h3>
+                        <p>根据倒班情况，选择倒班轮换的周期：</p>
+                        <p>
+                            可选项：一天一倒班；一周一倒班；一月一倒班；多天一倒班；
+                        </p>
+                        <p>一天一倒班比较简单，不举例说明了。</p>
+                        <p>举栗子说：比如一共2个班次：白班-夜班。</p>
+                        <p>
+                            一周一倒班：就是说一礼拜轮换一个班次。比如这周的工作日都是白班，那么下周的工作日都是夜班，再下周的工作日又都是白班。
+                        </p>
+                        <p>一月一倒班跟一周一倒班一样，只是周期是一月一换。</p>
+                        <p>多天一倒班：就是每隔多少天轮换一个班次。</p>
+                        <p>
+                            <b class="text-red"
+                                >* 新版可能需要删除旧版设置，请允许删除文件。</b
+                            >
+                        </p>
+                        <p>
+                            <b class="text-red"
+                                >* 以下所有设置，请按实际情况谨慎设置。</b
+                            >
+                        </p>
+                    </div>
+                    <div
+                        class="col-md-12 border-b my-30"
+                    ></div>
+                    <div class="col-md-7">
+                        <h3 class="font-bold">设置当前班次</h3>
+                        <p>选择好班次轮换周期后，就要设置当日的班次了。</p>
+                        <p>要慎重选择，当日上的是什么班。不然闹钟都不正确了。</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="thumb">
+                            <div
+                                class="inner"
+                                style="
+                                    background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645501.jpg);
+                                "
+                            ></div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-12 border-b my-30"
+                    ></div>
+                    <div class="col-md-5">
+                        <div class="thumb">
+                            <div
+                                class="inner"
+                                style="
+                                    background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645502.jpg);
+                                "
+                            ></div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="font-bold">确认班次设置</h3>
+                        <p>确认一天一倒班的当前班次设置。</p>
+                        <p>如需修改，点击重新设置。</p>
+                    </div>
+                    <div
+                        class="col-md-12 border-b my-30"
+                    ></div>
+                    <div class="col-md-7">
+                        <h3 class="font-bold">确认班次设置</h3>
+                        <p>确认一周一倒班的当前班次设置。</p>
+                        <p>如需修改，点击重新设置。</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="thumb">
+                            <div
+                                class="inner"
+                                style="
+                                    background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645506.jpg);
+                                "
+                            ></div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-12 border-b my-30"
+                    ></div>
+                    <div class="col-md-5">
+                        <div class="thumb">
+                            <div
+                                class="inner"
+                                style="
+                                    background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645507.jpg);
+                                "
+                            ></div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="font-bold">确认班次设置</h3>
+                        <p>确认一月一倒班的当前班次设置。</p>
+                        <p>如需修改，点击重新设置。</p>
+                    </div>
+                    <div
+                        class="col-md-12 border-b my-30"
+                    ></div>
+                    <div class="col-md-7">
+                        <h3 class="font-bold">设置轮换周期天数</h3>
+                        <p>如果选择了多天一倒班，就需要设置一个周期天数。</p>
+                        <p>具体已实际天数为准。默认为10。</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="thumb">
+                            <div
+                                class="inner"
+                                style="
+                                    background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645503.jpg);
+                                "
+                            ></div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-12 border-b my-30"
+                    ></div>
+                    <div class="col-md-5">
+                        <div class="thumb">
+                            <div
+                                class="inner"
+                                style="
+                                    background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645504.jpg);
+                                "
+                            ></div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="font-bold">设置当前班次第几天</h3>
+                        <p>确认多天一倒班的当前班次设置。</p>
+                        <p>具体已实际天数为准。默认为1。</p>
+                    </div>
+                    <div
+                        class="col-md-12 border-b my-30"
+                    ></div>
+                    <div class="col-md-7">
+                        <h3 class="font-bold">确认班次设置</h3>
+                        <p>确认多天一倒班的当前班次设置。</p>
+                        <p>如果是多天一调班的，会多出当前班次是第几天的提示</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="thumb">
+                            <div
+                                class="inner"
+                                style="
+                                    background-image: url(http://image.bmqy.net/upload/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202110261645505.jpg);
+                                "
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<div class="w-full bg-gray-100 mx-auto mt-10 py-5">
-    <div class="text-sm text-gray-400 text-center">
-        &copy;2016
-        <a href="http://www.bmqy.net" target="_blank" title="北门清燕">北门清燕</a>
+    <div class="container-fluid bg-info mt-30 py-30">
+        <div class="text-center">
+            &copy;2016
+            <a href="http://www.bmqy.net" target="_blank" title="北门清燕"
+                >北门清燕</a
+            >
+        </div>
     </div>
-</div>
-</body>
 </body>
 </html>
