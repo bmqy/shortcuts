@@ -7,22 +7,59 @@
     <title>原创快捷指令集合</title>
     <meta name="keywords" content="快捷指令,shortcuts,捷径,workflow">
     <meta name="description" content="bmqy原创的快捷指令集合">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://bmqy.github.io/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.bootcdn.net/ajax/libs/tailwindcss/2.2.7/tailwind.min.css" rel="stylesheet">
+    <style>
+        html{
+            background: url(http://image.bmqy.net/upload/bg.jpg) repeat;
+        }
+        .thumb-box{
+            width: 300px;
+            height: 180px;
+        }
+        .thumb{
+            width: 300px;
+            height: 150px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <img class="logo" src="/css/imgs/logo_workflow_bmqy.png" alt="快捷指令">
-            <h1>快捷指令</h1>
-            <p>此项目主要为站长原创、及网络收集的快捷指令规则，和与快捷指令相关的文档资料的收集。</p>
-            <p><a href="https://github.com/bmqy/workflow/wiki">【查看项目】</a></p>
+    <div class="container mx-auto text-center">
+        <div class="grid grid-cols-1">
+            <img class="mx-auto py-10" src="https://help.apple.com/assets/6008E0798215C647F71CD25A/6008E0808215C647F71CD268/zh_CN/d230a25cb974f8908871af04caad89a1.png" width="200" height="200" alt="快捷指令">
+            <h1 class="text-lg font-bold py-1.5">快捷指令</h1>
+            <p class="text-gray-700 py-3.5">此项目主要为bmqy原创、及网络收集的快捷指令规则，和与快捷指令相关的文档资料的收集。</p>
+        </div>
+        <div class="my-5 border-b border-dotted border-blue-200"></div>
+        <div class="grid grid-cols-5 gap-4">
+            <a class="thumb-box" href="javascript:;" title="捷径库">                    
+                <div class="thumb" style="background-image: url(http://image.bmqy.net/upload/IMG_2860.PNG);"></div>
+                <p class="text-gray-700 font-bold-500 py-1.5">捷径库</p>
+            </a>
+            <a class="thumb-box" href="javascript:;" title="微博热搜榜">                    
+                <div class="thumb" style="background-image: url(http://image.bmqy.net/upload/IMG_2857.PNG);"></div>
+                <p class="text-gray-700 font-bold-500 py-1.5">微博热搜榜</p>
+            </a>
+            <a class="thumb-box" href="javascript:;" title="自动壁纸">                    
+                <div class="thumb" style="background-image: url(http://image.bmqy.net/upload/IMG_2859.PNG);"></div>
+                <p class="text-gray-700 font-bold-500 py-1.5">自动壁纸</p>
+            </a>
+            <a class="thumb-box" href="javascript:;" title="我的心愿单">                    
+                <div class="thumb" style="background-image: url(http://image.bmqy.net/upload/IMG_2858.PNG);"></div>
+                <p class="text-gray-700 font-bold-500 py-1.5">我的心愿单</p>
+            </a>
+            <a class="thumb-box hover:underline" href="/item/daoban.html" title="倒班闹钟">                    
+                <div class="thumb" style="background-image: url(http://image.bmqy.net/upload/IMG_2856.PNG);"></div>
+                <p class="text-gray-700 font-bold-500 py-1.5">倒班闹钟</p>
+            </a>
         </div>
     </div>
     
-    <div class="footer">
-        <div class="links">
+    <div class="container mx-auto fixed inset-x-0 bottom-1.5">
+        <div class="text-sm text-gray-400 text-center">
             &copy;2016
             <a href="http://www.bmqy.net" target="_blank" title="北门清燕">北门清燕</a>
         </div>
